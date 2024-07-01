@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#9575cd" />
+    <title>  تواصل نت </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="img/logo.png" rel="icon">
+    
+</head>
+<body translate="no">
+<div class="cont">
+    <div class="demo">
+        <div class="login">
+		
+            <div style="padding-top: 50px;">
+                <img src="img/logo.png" class="logo" alt="#"/>
+            </div>
+            <h3 class="info error" id="error" style="color: rgb(255, 0, 221)"></h3>
+            <div class="login-form">
+                <form name="login" onsubmit="return onLoginSubmitted()">
+                    <input type="hidden" name="dst" value="$(link-orig)"/>
+                    <input type="hidden" name="popup" value="true"/>
+                    <label>
+                        <img class="ico" src="img/user.svg" alt="#" />
+   
+                 <input name="username" value="$(username)"    pattern="[0-9]*" type="text"  
+         placeholder="أدخل رقم الكرت هنا"    
+        />
+<!-- <script>  inputmode="numeric" required autocomplete="off" 
+         username-field improve-input only-alphanumeric  
+         to-lower to-arabic-numbers  
+
+ function checkInput() {
+   var input = document.getElementsByName('username')[0];
+   var value = input.value;     
+   var numeric = /^\d+$/.test(value);
+   if (!numeric) {
+      input.value = value.replace(/\D/g, '');
+   }
+}
+document.getElementsByName('username')[0].oninput = checkInput;    
+</script> -->
+
+                    </label>
+
+                    <label>
+                        <!-- <img class="ico" src="img/password.svg" alt="#" /> -->
+                        <input name="password" type="hidden" placeholder="كلمة المرور" />
+                    </label>
+                   
+                    <button type="button" class="login-submit" parent-id="status" enable-hot-cookie>تسجيل الدخول
+                    </button>
+                </form>
+				<button type="button" class="price-submit round-button" parent-id="price">الاسعار</button>
+                <button type="button" class="price-submit round-button" parent-id="sell-point">نقاط البيع</button>
+            </div>
+            <p>
+               
+                <h5 class="info bt  contact contact1">للشكاوي والاستفسار </h5>
+                <h5 class="info bt  contact">777905857</h5>
+            </p>
+        </div>
+        <div class="app" id="price">
+            <div class="app-top">
+
+                <p class="app-hello">أسعار الكروت</p>
+
+                <div class="app-user">
+                    هنا اسعار الاشتراكات اختر مايناسبك منها
+                </div>
+            </div>
+            <div class="app-bot">
+                <table>
+                    <thead>
+                    <tr>
+                        <th scope="col">السعر</th>
+                        <th scope="col">الوقت</th>
+                        <th scope="col">الرصيد</th>
+                        <th scope="col">الصلاحية</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td> 100  ريال</td>
+                        <td>4 ساعات </td>
+                        <td>300 ميجا</td>
+                        <td>4 أيام</td>
+                    </tr>
+                    <tr>
+                        <td> 250  ريال</td>
+                        <td>9 ساعات </td>
+                        <td>800 ميجا</td>
+                        <td>إسبوع</td>
+                    </tr>
+                    <tr>
+                        <td> 500  ريال</td>
+                        <td>15 ساعات </td>
+                        <td>1800 ميجا</td>
+                        <td>10 أيام</td>
+                    </tr>
+                    <tr style="font-weight: bolder">
+                        <td> 3000  ريال</td>
+                        <td>30 ساعات </td>
+                        <td>10 جيجا</td>
+                        <td>شهر</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="bottom-info">
+                    <h3 class="contact-text">يمكنك التواصل معنا عبر الرقم التالي :</h3>
+                    <div class="app-user">
+                        777905857
+                    </div>
+                    <p class="info bt">
+                        <span> تم تصميم الصفحة من قبل </span>
+                        <span><a href="https://wa.me/+967781040602" > أيمن الاوزري </a></span>
+                    </p>
+                </div>
+                <div class="app-logout">
+                    <svg class="app-logout-icon svg-icon" viewBox="0 0 20 20">
+                        <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="app" id="sell-point">
+            <div class="app-top">
+
+                <h2 class="app-hello">نقاط البيع</h2>
+
+                <div class="app-user">
+                عملانا الكرام ستجدون الكروت لدى
+                </div>
+            </div>
+            <div class="app-bot">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بقاله النحيم -  جوار جامع الاسطى</td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بقاله هاني -  جوار جامع قيراط </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بقاله ابو وسيم -  جوار صحيفه الثوره </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بقاله ابو احمد -  امام سوق شرف الدين </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بقاله الدار البيضاء </td>
+                    </tr>
+                     <tr>
+                        <td style="font-size: 1.3rem;">بقاله عبد السلام -  خلف سوق شرق الدين </td>
+                    </tr>
+                    <tr>
+                        <td style="font-size: 1.3rem;">بقاله ايادالوبر -  خلف جامع الاسطى </td>
+                    </tr>
+                 
+					
+                    </tbody>
+                </table>
+                <div class="bottom-info">
+                    <h3 class="contact-text">يمكنك التواصل معنا عبر الرقم التالي :</h3>
+                    <div class="app-user">
+                        777905857
+                    </div>
+                    <p class="info bt">
+                        <span> تم تصميم الصفحة من قبل </span>
+                        <span><a href="https://wa.me/+967781040602" >أيمن الاوزري</a></span>
+                    </p>
+                </div>
+                <div class="app-logout">
+                  <p>رجوع</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="app" id="status" >
+            <div class="app-top">
+
+                <p class="app-hello">تم تسجيل دخولك بنجاح!</p>
+
+                <div class="app-user">
+                    مرحبا كرتك هو:
+                    <span id="username"></span>
+                </div>
+            </div>
+            <div class="app-bot">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>عنوان الشبكة</td>
+                        <td id="ip"></td>
+                    </tr>
+                    <tr>
+                        <td>التنزيل</td>
+                        <td id="bytes_in"></td>
+                    </tr>
+                    <tr>
+                        <td>الرفع</td>
+                        <td id="bytes_out"></td>
+                    </tr>
+                    <tr remain_bytes_total>
+                        <td>التحميل المتبقي</td>
+                        <td id="remain_bytes_total"></td>
+                    </tr>
+                    <tr>
+                        <td>الوقت المستهلك</td>
+                        <td id="uptime"></td>
+                    </tr>
+                    <tr session_time_left>
+                        <td>الوقت المتبقي</td>
+                        <td id="session_time_left"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="bottom-info">
+                    <h3 class="contact-text">يمكنك التواصل معنا عبر الرقم التالي :</h3>
+                    <div class="app-user">
+                        777905857
+                    </div>
+                    <p class="info bt">
+                        <span> تم تصميم الصفحة من قبل </span>
+                        <span><a href="https://wa.me/+967781040602" >أيمن الاوزري</a></span>
+                    </p>
+                </div>
+                <div class="app-logout" erase-cookie clear-hot-cookie>
+                    <svg class="app-logout-icon svg-icon" viewBox="0 0 20 20">
+                        <path d="M6,3 a8,8 0 1,0 8,0 M10,0 10,12"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+       
+        <div class="app" id="block">
+            <div class="app-top">
+                <p class="app-hello">انت محظور</p>
+            </div>
+            <div class="app-bot">
+                <div style="padding: 25px">
+                    <h6 class="contact-text">لقد تم حظرك بسبب محاولات تسجيل الدخول الكثيرة الخاطئة</h6>
+                    <div class="app-user">
+                        <span>بقي على فك الحظر: </span>
+                        <span count-down-span></span>
+                    </div>
+                </div>
+                <div class="bottom-info" style="right: 86px">
+                    <h3 class="contact-text">يمكنك التواصل معنا عبر الرقم التالي :</h3>
+                    <div class="app-user">
+                        777905857
+                    </div>
+                    <p class="info bt">
+                        <span> تم تصميم الصفحة من قبل </span>
+                        <span><a href="https://wa.me/+967781040602" >أيمن الاوزري</a></span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="js/hotInImprover.min.js"></script>
+<script src="js/hotCookie.min.js"></script>
+<script src="js/hotBlocker.min.js" enable-hot-blocker try-count="20" block-time="3"></script>
+<script src="js/main.min.js" link-login-only="$(link-login-only)"></script>
+</body>
+
+</html>
